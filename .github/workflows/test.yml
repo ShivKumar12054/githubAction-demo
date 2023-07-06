@@ -21,8 +21,3 @@ jobs:
 
       - run: npm install
       - run: npm test a
-
-      # - uses: actions/checkout@v3
-
-      # - name: run tests
-      #   run: npm test a
