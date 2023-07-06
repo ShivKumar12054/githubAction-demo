@@ -7,7 +7,6 @@ on:
       - "branchName/**"
       - "qa/**"
 
-  push:
 
 jobs:
   tests:
