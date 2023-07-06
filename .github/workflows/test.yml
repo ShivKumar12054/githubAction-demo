@@ -7,12 +7,21 @@ on:
       - "branchName/**"
       - "qa/**"
 
-
 jobs:
   tests:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
 
-      - name: run tests
-        run: npm test a
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js 18.6.0
+        uses: actions/setup-node@v1
+        with:
+          node-version: 18.6.0
+
+      - run: npm ci
+      - run: npm test a
+
+      # - uses: actions/checkout@v3
+
+      # - name: run tests
+      #   run: npm test a
