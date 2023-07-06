@@ -4,6 +4,7 @@ run-name: tests
 on:
   pull_request:
     branches:
+      - main
       - "branchName/**"
       - "qa/**"
 
